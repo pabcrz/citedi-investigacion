@@ -6,7 +6,7 @@ import Direccion from "./Direccion";
 export default function Content() {
   return (
     <>
-      <section className="w-full bg-tertiary py-14 flex justify-center">
+      <section className="w-full py-14 flex justify-center">
         <p className="text-fluid-md w-max-content px-8">
           La investigación científica que se desarrolla en CITEDI se agrupa en
           líneas de generación y aplicación del conocimiento (LGAC) que permite
@@ -15,7 +15,7 @@ export default function Content() {
           impacto científico, tecnológico y social.
         </p>
       </section>
-      <section className="w-full py-14 flex justify-center px-8">
+      <section className="w-full py-14 flex justify-center px-8 bg-[#01876B]">
         <Card />
       </section>
       <section className="w-full bg-primary py-14 flex justify-center text-white px-8">

@@ -11,7 +11,7 @@ export default function Areas() {
             className="flex flex-col items-center w-[70%] md:max-w-[30%] px-8 hover:shadow-lg rounded-md py-4"
           >
             <img src={area.img} alt={area.content} className="rounded-md" />
-            <div className="rounded-full size-16 bg-[#EBF9F0] flex items-center justify-center -mt-4">
+            <div className="rounded-full size-16 bg-primary flex items-center justify-center -mt-4">
               <img
                 src={area.icon}
                 alt={area.alt}
