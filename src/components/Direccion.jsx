@@ -41,7 +41,7 @@ export default function Direccion() {
           </a>
         </div>
         <img
-          src="/src/assets/profile.jpg"
+          src="/assets/profile.jpg"
           alt="Fabiola Cuamea"
           className="max-w-[90%] h-auto m-auto"
         />

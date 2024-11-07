@@ -1,4 +1,4 @@
-import logoIPN from "../assets/logo_ipn.webp";
+import logoIPN from "/assets/logo_ipn.webp";
 
 export default function Hero() {
   return (
