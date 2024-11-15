@@ -106,13 +106,13 @@ export default function Card() {
 
   return (
     <>
-      <div className="w-max-content flex flex-wrap gap-8 justify-center">
+      <div className="w-max-content flex flex-wrap gap-4 justify-center">
         {cards.map((card, cardIndex) => (
           <div
             key={cardIndex}
-            className="p-4 w-80 h-80 flex flex-col items-center bg-black/30 rounded-md"
+            className="p-4 w-80 h-96 flex flex-col gap-4 items-center justify-center bg-white rounded-md"
           >
-            <div className="flex justify-around text-white w-full h-44">
+            <div className="flex justify-around w-full">
               {card.items.map((item, itemIndex) => {
                 const isActive =
                   hoveredContent.find(
@@ -135,7 +135,7 @@ export default function Card() {
                     }
                   >
                     <p
-                      className={`rounded-full min-w-20 size-20 border-2 flex items-center justify-center text-white text-4xl font-bold transition-transform duration-200 ${
+                      className={`rounded-full min-w-20 size-20 border-2 flex items-center justify-center text-4xl font-bold transition-transform duration-200${
                         isActive ? "transform scale-110" : ""
                       }`}
                     >
@@ -148,7 +148,7 @@ export default function Card() {
 
             {/* Contenido centrado debajo de los números */}
             <p
-              className="w-full text-sm text-center text-white"
+              className="w-full text-sm text-center min-h-16 "
               dangerouslySetInnerHTML={{
                 __html: DOMPurify.sanitize(
                   hoveredContent.find((item) => item.cardIndex === cardIndex)
@@ -166,7 +166,7 @@ export default function Card() {
                     .imageUrl
                 }
                 alt="Contenido relacionado"
-                className="w-24 h-24 mt-2"
+                className="w-auto h-1/2"
               />
             )}
           </div>
