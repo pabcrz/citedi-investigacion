@@ -6,7 +6,7 @@ export const cards = [
         content:
           "<span>Investigadores</span> que conforman la planta académica.",
         numbers: 24,
-        img: "/assets/Investigadores.webp",
+        img: "/assets/grafica1.png",
       },
     ],
     color: "#3F3F3F",
@@ -18,7 +18,7 @@ export const cards = [
         content:
           "Investigadores en el <span>Sistema Nacional de Investigadoras e Investigadores (SNII).</span>",
         numbers: 11,
-        img: "/assets/snii.webp",
+        img: "/assets/grafica2.png",
       },
     ],
     color: "#A37D00",
