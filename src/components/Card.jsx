@@ -110,7 +110,7 @@ export default function Card() {
         {cards.map((card, cardIndex) => (
           <div
             key={cardIndex}
-            className="p-4 w-80 h-96 flex flex-col gap-4 items-center justify-center bg-white rounded-md"
+            className="p-4 w-80 h-96 flex flex-col gap-4 items-center justify-center bg-white shadow-sm rounded-xl"
           >
             <div className="flex justify-around w-full">
               {card.items.map((item, itemIndex) => {
@@ -136,7 +136,9 @@ export default function Card() {
                   >
                     <p
                       className={`rounded-full min-w-20 size-20 border-2 flex items-center justify-center text-4xl font-bold transition-transform duration-200${
-                        isActive ? "transform scale-110" : ""
+                        isActive
+                          ? "transform scale-110 text-primary border-primary"
+                          : ""
                       }`}
                     >
                       {item.numbers}
