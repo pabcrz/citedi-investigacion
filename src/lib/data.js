@@ -101,17 +101,17 @@ export const cards = [
 export const areas = [
   {
     content: "Cómputo inteligente de alto rendimiento",
-    img: "/assets/computo.jpg",
+    img: "/assets/computo3.jpg",
     icon: "/assets/computo.svg",
   },
   {
     content: "Sistemas dinámicos y control en tecnologías emergentes",
-    img: "/assets/control.jpg",
+    img: "/assets/control3.jpg",
     icon: "/assets/control.svg",
   },
   {
     content: "Tecnologías de imagen y telecomunicacioens modernas",
-    img: "/assets/modernas.jpg",
+    img: "/assets/modernas2.jpg",
     icon: "/assets/modernas.svg",
   },
 ];
