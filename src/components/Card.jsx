@@ -106,74 +106,72 @@ export default function Card() {
 
   return (
     <>
-      <div className="w-max-content flex flex-wrap gap-4 justify-center">
-        {cards.map((card, cardIndex) => (
-          <div
-            key={cardIndex}
-            className="p-4 w-80 h-96 flex flex-col gap-4 items-center justify-center bg-white shadow-sm rounded-xl"
-          >
-            <div className="flex justify-around w-full">
-              {card.items.map((item, itemIndex) => {
-                const isActive =
-                  hoveredContent.find(
-                    (hovered) =>
-                      hovered.cardIndex === cardIndex &&
-                      hovered.itemIndex === itemIndex
-                  ) !== undefined;
+      {cards.map((card, cardIndex) => (
+        <div
+          key={cardIndex}
+          className="p-4 w-80 h-96 flex flex-col gap-4 items-center justify-center bg-white shadow-sm rounded-xl"
+        >
+          <div className="flex justify-around w-full">
+            {card.items.map((item, itemIndex) => {
+              const isActive =
+                hoveredContent.find(
+                  (hovered) =>
+                    hovered.cardIndex === cardIndex &&
+                    hovered.itemIndex === itemIndex
+                ) !== undefined;
 
-                return (
-                  <div
-                    key={itemIndex}
-                    className="flex flex-col justify-center items-center"
-                    onMouseEnter={() =>
-                      handleMouseEnter(
-                        item.content,
-                        item.img,
-                        cardIndex,
-                        itemIndex
-                      )
-                    }
+              return (
+                <div
+                  key={itemIndex}
+                  className="flex flex-col justify-center items-center"
+                  onMouseEnter={() =>
+                    handleMouseEnter(
+                      item.content,
+                      item.img,
+                      cardIndex,
+                      itemIndex
+                    )
+                  }
+                >
+                  <p
+                    className={`rounded-full min-w-20 size-20 border-2 flex items-center justify-center text-4xl font-bold transition-transform duration-200${
+                      isActive
+                        ? "transform scale-110 text-primary border-primary"
+                        : ""
+                    }`}
                   >
-                    <p
-                      className={`rounded-full min-w-20 size-20 border-2 flex items-center justify-center text-4xl font-bold transition-transform duration-200${
-                        isActive
-                          ? "transform scale-110 text-primary border-primary"
-                          : ""
-                      }`}
-                    >
-                      {item.numbers}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* Contenido centrado debajo de los números */}
-            <p
-              className="w-full text-sm text-center min-h-16 "
-              dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(
-                  hoveredContent.find((item) => item.cardIndex === cardIndex)
-                    ?.content || ""
-                ),
-              }}
-            ></p>
-
-            {/* Imagen debajo del contenido */}
-            {hoveredContent.find((item) => item.cardIndex === cardIndex)
-              ?.imageUrl && (
-              <img
-                src={
-                  hoveredContent.find((item) => item.cardIndex === cardIndex)
-                    .imageUrl
-                }
-                alt="Contenido relacionado"
-                className="w-auto h-1/2"
-              />
-            )}
+                    {item.numbers}
+                  </p>
+                </div>
+              );
+            })}
           </div>
-        ))}
-      </div>
+
+          {/* Contenido centrado debajo de los números */}
+          <p
+            className="w-full text-sm text-center min-h-16 "
+            dangerouslySetInnerHTML={{
+              __html: DOMPurify.sanitize(
+                hoveredContent.find((item) => item.cardIndex === cardIndex)
+                  ?.content || ""
+              ),
+            }}
+          ></p>
+
+          {/* Imagen debajo del contenido */}
+          {hoveredContent.find((item) => item.cardIndex === cardIndex)
+            ?.imageUrl && (
+            <img
+              src={
+                hoveredContent.find((item) => item.cardIndex === cardIndex)
+                  .imageUrl
+              }
+              alt="Contenido relacionado"
+              className="w-auto h-1/2"
+            />
+          )}
+        </div>
+      ))}
     </>
   );
 }
