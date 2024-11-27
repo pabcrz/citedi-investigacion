@@ -16,7 +16,9 @@ export default function Content() {
         </p>
       </section>
       <section className="w-full py-14 flex justify-center px-8 bg-[#01876B]">
-        <Card />
+        <div className="w-max-content flex flex-wrap gap-4 justify-center">
+          <Card />
+        </div>
       </section>
       <section className="w-full bg-primary py-14 flex justify-center text-white px-8">
         <p className="text-fluid-md w-max-content px-8">
@@ -30,7 +32,9 @@ export default function Content() {
         </p>
       </section>
       <section className="w-full flex justify-center py-14">
-        <Areas />
+        <div className="text-fluid-md w-max-content flex flex-wrap gap-2 text-center font-bold justify-center">
+          <Areas />
+        </div>
       </section>
       <section className="w-full flex justify-center py-14 bg-[#323232]">
         <About />

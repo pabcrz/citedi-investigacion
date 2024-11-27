@@ -1,23 +1,8 @@
-import About from "./About";
-import Areas from "./Areas";
-import Card from "./Card";
-import Direccion from "./Direccion";
+import { areas } from "../lib/data";
 
-export default function Content() {
+export default function LGAC() {
   return (
     <>
-      <section className="w-full py-14 flex justify-center">
-        <p className="text-fluid-md w-max-content px-8">
-          La investigación científica que se desarrolla en CITEDI se agrupa en
-          líneas de generación y aplicación del conocimiento (LGAC) que permite
-          concentrar nuestros esfuerzos de investigación y de formación de
-          capital humano de nivel posgrado para obtener resultados con mayor
-          impacto científico, tecnológico y social.
-        </p>
-      </section>
-      <section className="w-full py-14 flex justify-center px-8 bg-[#01876B]">
-        <Card />
-      </section>
       <section className="w-full bg-primary py-14 flex justify-center text-white px-8">
         <p className="text-fluid-md w-max-content px-8">
           <span className="text-3xl">
@@ -29,14 +14,35 @@ export default function Content() {
           de nuevo conocimiento a favor de la sociedad.
         </p>
       </section>
-      <section className="w-full flex justify-center py-14">
-        <Areas />
-      </section>
-      <section className="w-full flex justify-center py-14 bg-[#323232]">
-        <About />
-      </section>
-      <section className="w-full px-8 py-14 bg-tertiary flex justify-center">
-        <Direccion />
+
+      <section className="w-full py-14 flex justify-center px-8">
+        <div className="flex flex-col w-max-content py-14 justify-center px-8 text-fluid-md gap-2 text-center font-bold ">
+          {areas.map((area, i) => (
+            <div
+              key={i}
+              className="flex flex-col gap-4 items-center px-8 rounded py-4"
+            >
+              <h3 className="">{area.title}</h3>
+              <div className="flex gap-4 text-justify">
+                <div className="flex flex-col justify-center">
+                  <img src={area.img} alt={area.title} className="shadow-lg" />
+                  <div className="rounded-full size-16 bg-primary/90 flex items-center justify-center -mt-4">
+                    <img
+                      src={area.icon}
+                      alt={area.alt}
+                      role="img"
+                      aria-hidden="true"
+                      className="size-8"
+                    />
+                  </div>
+                </div>
+                <p className="text-lg font-normal max-w-[70%]">
+                  {area.content}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );

@@ -100,19 +100,25 @@ export const cards = [
 
 export const areas = [
   {
-    content: "Cómputo inteligente de alto rendimiento",
+    title: "Cómputo inteligente de alto rendimiento",
     img: "/assets/computo3.jpg",
     icon: "/assets/computo.svg",
+    content:
+      "El trabajo de investigación de la LGAC se concentra principalmente en las áreas de control inteligente, sistemas inteligentes cuánticos y procesamiento cuántico de señales, planeación de trayectoria, automóviles autónomos, y sistemas farmacobiológicos. Se realiza investigación básica de frontera aplicada. Se desarrollan algoritmos híbridos que combinan diversas técnicas como lógica difusa, redes neuronales, algoritmos evolutivos y de comportamiento social. Los algoritmos desarrollados se prueban en sistemas basados en FPGAs, procesadores multinúcleo y GPUs. En esta LGAC cuenta con 2 laboratorios: Cómputo Inteligente de Alto Rendimiento y el de Ciencia de Datos. Están adscritos 8 docentes, el 25% pertenece al SNII y cuyas investigaciones se centran en las áreas de sistemas de inspiración cuántica, ciencia de datos e innovación social.",
   },
   {
-    content: "Sistemas dinámicos y control en tecnologías emergentes",
+    title: "Sistemas dinámicos y control en tecnologías emergentes",
     img: "/assets/control3.jpg",
     icon: "/assets/control.svg",
+    content:
+      "El grupo investiga metodologías y diseños de controladores robustos basados en H-infinito no lineal y estructura variable, para casos en los que el modelo no es conocido o cuando es obligatorio considerar la dinámica de los actuadores. Las aplicaciones se encuentran en péndulos invertidos, vehículos aéreos y espaciales y en general en sistemas mecánicos. También se estudian las técnicas de control inteligente basadas en lógica difusa tipo 2 y similares, con aplicaciones a la planeación segura y eficiente de trayectorias de robots móviles, y al diseño de controladores de sistemas electromecánicos. Adicionalmente, se lleva a cabo investigación científica básica en el análisis modelos dinámicos de crecimiento tumoral, con la finalidad de determinar las condiciones que conducen a su eliminación. En esta LGAC cuenta con los laboratorios de Control y el de Control Robusto. Están adscritos 4 docentes, el 75% pertenece al SNII, quienes trabajan en las áreas de sistemas mecatrónicos complejos, navegación de vehículos y medicina matemática.",
   },
   {
-    content: "Tecnologías de imagen y telecomunicacioens modernas",
+    title: "Tecnologías de imagen y telecomunicacioens modernas",
     img: "/assets/modernas2.jpg",
     icon: "/assets/modernas.svg",
+    content:
+      "Un grupo diverso de investigadores trabaja en las áreas de: sistemas avanzados de procesamiento de imágenes y reconocimiento de patrones, donde se desarrollan algoritmos y arquitecturas digitales de tipo FPGA y GPU para aplicaciones tales como mejoramiento de la visibilidad en tiempo real en la presencia de neblina, reconocimiento y seguimiento de objetos en el espacio 3D, reconocimiento de rostros y reconocimiento de emociones a través de la expresión facial; diseño y modelado de circuitos y sistemas para telecomunicaciones; tecnología de percepción remota en el espectro visible y VNIR para nanosatélites; reconocimiento de iris bajo condiciones ambientales no controladas y distancia media; e indización de contenidos multimedios para la preservación de la herencia cultural. Esta LGAC cuenta con 4 laboratorios: Telecomunicaciones, Procesamiento de Imágenes, Tecnología de Percepción Remota e Internet de las Cosas y el de Análisis Multimedia y Aprendizaje Profundo. Están adscritos 10 docentes, el 40% es miembro del SNII, quienes trabajan en las áreas de procesamiento opto-digital de imágenes, inteligencia artificial aplicada a la salud humana, redes de telecomunicaciones de última generación e internet de las cosas.",
   },
 ];
 
