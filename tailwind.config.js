@@ -7,6 +7,7 @@ export default {
         primary: "#5a1236",
         secondary: "#00FF00",
         tertiary: "#F6F7F6",
+        green: "#01876B",
       },
       spacing: {
         "max-content": "1140px",

@@ -129,7 +129,7 @@ export const about = [
   },
   {
     title: "Investigadores",
-    icon: "/assets/investigadores.svg",
+    icon: "/assets/investigacion.svg",
   },
   {
     title: "Productos académicos",
@@ -154,5 +154,114 @@ export const about = [
   {
     title: "Acciones de colaboración",
     icon: "/assets/colaboracion.svg",
+  },
+];
+
+export const investigadores = [
+  {
+    name: "Dr. Konstantin Starkov",
+    email: "konst@citedi.mx",
+    level: "III",
+  },
+  {
+    name: "Dr. Eduardo Javier Moreno Valenzuela",
+    email: "moreno@citedi.mx",
+    level: "III",
+  },
+  {
+    name: "Dr. Luis Tupak Aguilar Bustos",
+    email: "laguilar@citedi.mx",
+    level: "II",
+  },
+  {
+    name: "Dr. Oscar Humberto Montiel Ross",
+    email: "oross@citedi.mx",
+    level: "II",
+  },
+  {
+    name: "Dr. José Cruz Núñez Pérez",
+    email: "nunez@citedi.mx",
+    level: "II",
+  },
+  {
+    name: "Dr. Víctor Hugo Díaz Ramírez",
+    email: "vhdiaz@citedi.mx",
+    level: "II",
+  },
+  {
+    name: "Dr. Rigoberto Juárez Salazar",
+    email: "rjuarez@citedi.mx",
+    level: "II",
+  },
+  {
+    name: "Dra. Mireya Saraí García Vázquez",
+    email: "mgarciav@citedi.mx",
+    level: "I",
+  },
+  {
+    name: "Dr. Juan José Tapia Armenta",
+    email: "jjtapia@citedi.mx",
+    level: "I",
+  },
+  {
+    name: "Dr. Sergio Jesús González Ambriz",
+    email: "sgonzalez@citedi.mx",
+    level: "C",
+  },
+  {
+    name: "Dr. Luis Arturo González Hernández",
+    email: "lgonzal@citedi.mx",
+    level: "",
+  },
+  {
+    name: "Dr. Ciro Andrés Martínez García Moreno",
+    email: "ciro@citedi.mx",
+    level: "",
+  },
+  {
+    name: "Dr. Julio César Rolón Garrido",
+    email: "jcrolon@citedi.mx",
+    level: "",
+  },
+  {
+    name: "Dr. Roberto Herrera Charles",
+    email: "robccharles@citedi.mx",
+    level: "",
+  },
+  { name: "Dr. Moisés Sánchez Adame", email: "msanchez@citedi.mx", level: "" },
+  {
+    name: "Dra. Isaura González Rubio Acosta",
+    email: "isaura@citedi.mx",
+    level: "",
+  },
+  {
+    name: "M. en C. Teodoro Álvarez Sánchez",
+    email: "talvarez@citedi.mx",
+    level: "",
+  },
+  {
+    name: "M. en C. Adolfo Esquivel Martínez",
+    email: "esquivel@citedi.mx",
+    level: "",
+  },
+  {
+    name: "M. en C. David Jaime Saucedo Martínez",
+    email: "dsaucedo@citedi.mx",
+    level: "",
+  },
+  {
+    name: "M. en C. Andrés Calvillo Téllez",
+    email: "calvillo@citedi.mx",
+    level: "",
+  },
+  {
+    name: "M. en C. Luis Miguel Zamudio Fuentes",
+    email: "lmzamudio@citedi.mx",
+    level: "",
+  },
+  {
+    name: "Esp. Eduardo Barba Cervantes",
+    email: "ebarba@citedi.mx",
+    level: "",
   },
 ];
