@@ -1,9 +1,10 @@
+import GeneralInfo from "../components/GeneralInfo";
 import { areas } from "../lib/data";
 
 export default function LGAC() {
   return (
     <>
-      <section className="w-full bg-primary py-14 flex justify-center text-white px-8">
+      <section className="w-full bg-primary py-14 flex justify-center text-white md:px-8">
         <p className="text-fluid-md w-max-content px-8">
           <span className="text-3xl">
             Líneas de generación y aplicación del conocimiento (LGAC)
@@ -16,15 +17,15 @@ export default function LGAC() {
       </section>
 
       <section className="w-full py-14 flex justify-center px-8">
-        <div className="flex flex-col w-max-content py-14 justify-center px-8 text-fluid-md gap-2 text-center font-bold ">
+        <div className="flex flex-col w-max-content md:py-14 justify-center md:px-8 text-fluid-md gap-8 md:gap-4 text-center font-bold ">
           {areas.map((area, i) => (
             <div
               key={i}
-              className="flex flex-col gap-4 items-center px-8 rounded py-4"
+              className="flex flex-col gap-4 items-center md:px-8 rounded"
             >
-              <h3 className="">{area.title}</h3>
-              <div className="flex gap-4 text-justify">
-                <div className="flex flex-col justify-center">
+              <h2 className="">{area.title}</h2>
+              <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-justify">
+                <div className="flex flex-col justify-center items-center">
                   <img src={area.img} alt={area.title} className="shadow-lg" />
                   <div className="rounded-full size-16 bg-primary/90 flex items-center justify-center -mt-4">
                     <img
@@ -36,13 +37,16 @@ export default function LGAC() {
                     />
                   </div>
                 </div>
-                <p className="text-lg font-normal max-w-[70%]">
+                <p className="text-lg font-normal md:max-w-[70%]">
                   {area.content}
                 </p>
               </div>
             </div>
           ))}
         </div>
+      </section>
+      <section className="w-full bg-green py-14 flex flex-col gap-10 items-center text-white md:px-8">
+        <GeneralInfo />
       </section>
     </>
   );
